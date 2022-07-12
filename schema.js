@@ -18,6 +18,7 @@ const schema = buildSchema(`
 
     type Query{
         getUser(id: ID): User
+        getAllUsers: [User]
     }
 
     input UserInput {
